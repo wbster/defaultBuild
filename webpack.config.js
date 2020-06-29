@@ -19,18 +19,11 @@ module.exports = {
                     presets: ['@babel/preset-env'],
                 }
             }]
-
         }, {
             test: /\.sc?ss$/, // стили
             use: [
                 MiniCss.loader,
-                {
-                    loader: 'css-loader',
-                    options: {
-                        url: false
-                    }
-
-                },
+                'css-loader',
                 'sass-loader',
             ]
         }, {
@@ -39,15 +32,10 @@ module.exports = {
                 'pug-loader'
             ]
         }, {
-            test: /\.woff2?/i, // шрифты и прочая херь
+            test: /\.(png|svg|jpe?g|gif)$/,
             use: [
-                {
-                    loader: 'url-loader',
-                    options: {
-                        limit: false
-                    }
-                }
-            ],
+                'file-loader'
+            ]
         }]
     },
     plugins: [

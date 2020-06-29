@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[1],{Ag9z:function(n,o,s){},Tfgx:function(n,o,s){"use strict";s.r(o);s("Ag9z");console.log("test")}},[["Tfgx",0]]]);

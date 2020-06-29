@@ -1,4 +1,6 @@
 // подключаем стили 👇🏼
 import "./main.scss"
 
-console.log('test')
+import imageLink from '../img/test.jpg'
+
+console.log('imageLink', imageLink)
